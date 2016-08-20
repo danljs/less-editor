@@ -1,10 +1,10 @@
 'use strict'
 module.exports = (() => {
   let express = require("express"),
-      fs = require('fs'),
+      fs      = require('fs'),
       app     = express(),
       path    = require("path"),
-      less = require('less'),
+      less    = require('less'),
       bodyParser = require('body-parser')
 
   app.use(bodyParser.json());
@@ -26,8 +26,7 @@ module.exports = (() => {
     less.render(input, options, function (err, result) {
       if (!err) fs.writeFile(__dirname + '/css/app.css',result.css)
     });
-    res.send('ok')
-    // res.sendFile(path.join(__dirname+'/main.html'))
+    res.send({data:'OK'})
   });
 
   let port = 1234
