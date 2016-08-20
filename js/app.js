@@ -26,12 +26,8 @@ var model = (function(){
 		update : function(styles){
 			ajax('post', 'update', JSON.stringify(styles))
       .then(
-        function(e){
-        	console.log(e);
-        },
-        function (e) {
-        	console.log(e);
-        }
+        function(e){console.log(e);},
+        function (e) {console.log(e);}
       )
 		}
 	}

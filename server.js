@@ -5,8 +5,9 @@ module.exports = (() => {
       app     = express(),
       path    = require("path"),
       less    = require('less'),
-      bodyParser = require('body-parser')
-
+      bodyParser = require('body-parser'),
+      input = fs.readFileSync(__dirname + '/less/app.less', 'utf8')
+      
   app.use(bodyParser.json());
   app.use(express.static('.'))
 
@@ -15,8 +16,7 @@ module.exports = (() => {
   });
 
   app.post('/update',function(req,res){
-    var input = fs.readFileSync(__dirname + '/less/app.less', 'utf8')
-    var options = {
+    let options = {
       modifyVars: {
         'color': req.body.color||'#000',
         'background': req.body.background||'#fff'
