@@ -8,4 +8,4 @@ node server.js
 
 http://localhost:1234
 ```
-Input 'red' or else any color value into [Color] and [Background], and then click [Update] button.
+Input 'red' or other any color value into [Color] and [Background], and then click [Update] button.
