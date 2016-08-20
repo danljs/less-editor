@@ -1,0 +1,23 @@
+{
+  "name": "mern",
+  "version": "0.0.1",
+  "description": "Less editor",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "less": "^2.7.1"
+  },
+  "devDependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danljs/"
+  },
+  "keywords": [
+    "Less",
+    "Hot-loader"
+  ],
+  "author": "Daniel Liu",
+  "license": "MIT"
+}
