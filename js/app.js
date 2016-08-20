@@ -30,14 +30,14 @@ var model = (function(){
                 color: color,
                 background: background
             }))
-        .then(
-            function(e){
-            	window.location.reload(false)
-            },
-            function (e) {
-            	console.log(e)
-            })
-		}
+	        .then(
+	            function(e){
+	            	console.log(e)
+	            },
+	            function (e) {
+	            	console.log(e)
+	            })
+			}
 	}
 }());
 

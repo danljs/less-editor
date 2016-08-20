@@ -26,7 +26,7 @@ module.exports = (() => {
     less.render(input, options, function (err, result) {
       if (!err) fs.writeFile(__dirname + '/css/app.css',result.css)
     });
-
+    res.send('ok')
     // res.sendFile(path.join(__dirname+'/main.html'))
   });
 
