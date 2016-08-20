@@ -5,10 +5,10 @@ module.exports = (() => {
       app     = express(),
       path    = require("path"),
       less    = require('less'),
-      bodyParser = require('body-parser'),
-      input = fs.readFileSync(__dirname + '/less/app.less', 'utf8')
-      
-  app.use(bodyParser.json());
+      parser  = require('body-parser'),
+      input   = fs.readFileSync(__dirname + '/less/app.less', 'utf8')
+
+  app.use(parser.json());
   app.use(express.static('.'))
 
   app.get('/',function(req,res){
